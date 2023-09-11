@@ -1,0 +1,15 @@
+#psychotherapy-content>.content-text {
+    background-color: #fbebe5;
+    color: var(--brown);
+}
+
+#psychotherapy-content>.content-img {
+    background-image: url(../assets/psychotherapy-content.jpg);
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+    #psychotherapy-content>.content-img {
+        background-position: 100% 88%;
+    }
+}

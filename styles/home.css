@@ -1,0 +1,271 @@
+/*section*/
+section {
+    width: 100%;
+    display: flex;
+}
+
+.section-img,
+.section-text {
+    height: 44vw;
+    min-height: 600px;
+}
+
+.section-img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.section-text {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.section-text>h1 {
+    font-size: max(3.5vw, 39px);
+}
+
+.section-text>h2 {
+    font-size: max(2.8vw, 34px);
+}
+
+.section-text>p {
+    font-size: max(1.3vw, 18px);
+}
+
+.section-text>a {
+    font-size: max(1.1vw, 16px);
+    width: fit-content;
+}
+
+/*à propos*/
+#about>.section-img {
+    background-image: url(../assets/about.jpg);
+    width: 30%;
+    min-width: 350px;
+}
+
+#about>.section-text {
+    background-color: var(--light-pink);
+    color: rgb(27, 59, 123);
+    width: 70%;
+}
+
+#about>.section-text>a {
+    color: rgb(35, 57, 109);
+}
+
+#about>.section-text>a:hover {
+    color: rgb(25, 28, 31);
+}
+
+/*psychotherapie*/
+#psychotherapy {
+    border-top: 1px solid var(--brown);
+    border-bottom: 1px solid var(--brown);
+}
+
+#psychotherapy>.section-img {
+    background-image: url(../assets/psychotherapy.jpg);
+    width: 40%;
+    min-width: 350px;
+}
+
+#psychotherapy>.section-text {
+    background-color: #fce7df;
+    color: var(--brown);
+    width: 70%;
+}
+
+#psychotherapy>.section-text>a {
+    color: rgb(98, 92, 86);
+}
+
+#psychotherapy>.section-text>a:hover {
+    color: rgb(61, 58, 58);
+}
+
+/*naissance*/
+#birth {
+    position: relative;
+}
+
+#birth>.section-img {
+    width: 100%;
+    background-image: url(../assets/birth.jpg);
+    background-attachment: fixed;
+    opacity: 0.3;
+}
+
+#birth>.section-text {
+    position: absolute;
+    text-align: center;
+    color: #3f254a;
+}
+
+#birth>.section-text>a {
+    color: rgb(91, 66, 100);
+    width: auto;
+}
+
+#birth>.section-text>a:hover {
+    color: rgb(33, 23, 39);
+}
+
+/*méditation*/
+#meditation {
+    border-top: 1px solid #1e2128;
+    border-bottom: 1px solid #1e2128;
+}
+
+#meditation>.section-img {
+    background-image: url(../assets/meditation.jpg);
+    width: 30%;
+    min-width: 350px;
+}
+
+#meditation>.section-text {
+    background-color: #eef6f2;
+    color: #144957;
+    width: 70%;
+}
+
+#meditation>.section-text>a {
+    color: rgb(113, 117, 120);
+}
+
+#meditation>.section-text>a:hover {
+    color: rgb(78, 82, 86);
+}
+
+/*supervision*/
+#supervision {
+    border-bottom: 1px solid #060D0F;
+}
+
+#supervision>.section-img {
+    background-image: url(../assets/supervision.jpg);
+    width: 30%;
+    min-width: 350px;
+}
+
+#supervision>.section-text {
+    background-color: #7f9cac;
+    color: #f2f1ed;
+    width: 70%;
+}
+
+#supervision>.section-text>a {
+    color: rgb(54, 65, 75);
+}
+
+#supervision>.section-text>a:hover {
+    color: rgb(22, 26, 30);
+}
+
+/*contact*/
+#contact {
+    background-color: #eeeded;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 10px;
+}
+
+#contact>h2 {
+    color: #0e2d36;
+    font-size: max(2.8vw, 30px);
+}
+
+#contact>span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+#contact>span:not(#maps-details) {
+    font-size: max(1.4vw, 19px);
+    color: rgb(48 56 77);
+}
+
+#contact>#location>div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact>i {
+    color: rgb(84, 84, 84);
+}
+
+#maps-details {
+    color: rgb(104 104 123);
+    font-size: max(0.9vw, 15px);
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+    .section-img-left {
+        flex-direction: column;
+    }
+
+    .section-img-right {
+        flex-direction: column-reverse;
+    }
+
+    .section-img,
+    .section-text {
+        width: 100% !important;
+    }
+
+    .section-text>h1 {
+        font-size: 8vw;
+    }
+
+    .section-text>h2,
+    #contact>h2 {
+        font-size: 7vw;
+    }
+
+    .section-text>p,
+    #contact>span:not(#maps-details) {
+        font-size: 3.1vw;
+    }
+
+    #maps-details {
+        font-size: 2.3vw;
+    }
+
+    .section-text>a {
+        font-size: 2.9vw;
+    }
+}
+
+/*mobile*/
+@media (max-width: 479px) {
+    .section-text>h1 {
+        font-size: 10.5vw;
+    }
+
+    .section-text>h2,
+    #contact>h2 {
+        font-size: 8.2vw;
+    }
+
+    .section-text>p,
+    #contact>span:not(#maps-details) {
+        font-size: 5vw;
+    }
+
+    #maps-details {
+        font-size: 3vw;
+    }
+}

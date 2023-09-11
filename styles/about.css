@@ -1,0 +1,15 @@
+#about-content>.content-text {
+    background-color: var(--light-pink);
+    color: rgb(27, 59, 123);
+}
+
+#about-content>.content-img {
+    background-image: url(../assets/about-content.jpg);
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+    #about-content>.content-img {
+        background-position: 100% 30%;
+    }
+}

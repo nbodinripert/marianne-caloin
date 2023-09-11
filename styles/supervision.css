@@ -1,0 +1,15 @@
+#supervision-content>.content-text {
+    background-color: #fbebe5;
+    color: rgb(11, 70, 11);
+}
+
+#supervision-content>.content-img {
+    background-image: url(../assets/supervision-content.jpg);
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+    #supervision-content>.content-img {
+        background-position: 100% 30%;
+    }
+}

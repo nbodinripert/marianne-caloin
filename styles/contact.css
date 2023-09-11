@@ -1,0 +1,47 @@
+#contact-content {
+    margin-top: 65px;
+    min-height: calc(100vh - 65px);
+    background-color: var(--light-pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#contact-content>h2 {
+    color: #0e2d36;
+    font-size: max(2.8vw, 30px);
+}
+
+#contact-content>img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+#contact-content>span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+#contact-content>span:not(#maps-details) {
+    font-size: max(1.4vw, 19px);
+    color: rgb(48 56 77);
+}
+
+#contact-content>#location>div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-content>i {
+    color: rgb(84, 84, 84);
+}
+
+#maps-details {
+    color: rgb(104 104 123);
+    font-size: max(0.9vw, 15px);
+}
