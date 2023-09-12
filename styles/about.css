@@ -4,12 +4,12 @@
 }
 
 #about-content>.content-img {
-    background-image: url(../assets/about-content.jpg);
+    background-image: url(../assets/marianne-content.jpg);
 }
 
 /*tablet*/
 @media (max-width: 768px) {
     #about-content>.content-img {
-        background-position: 100% 30%;
+        background-position: 100% 25%;
     }
 }
