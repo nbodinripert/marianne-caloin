@@ -268,4 +268,8 @@ section {
     #maps-details {
         font-size: 3vw;
     }
+
+    .section-text>a {
+        font-size: 3.7vw;
+    }
 }
