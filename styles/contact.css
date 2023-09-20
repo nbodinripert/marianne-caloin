@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 #contact-content>h2 {
@@ -20,7 +20,8 @@
     border-radius: 50%;
 }
 
-#contact-content>span {
+#contact-content>span,
+#contact-content>p {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -48,6 +49,11 @@
 
 /*tablet*/
 @media (max-width: 768px) {
+    #contact-content {
+        padding: 0 10px;
+        gap: 10px;
+    }
+
     #contact-content>h2 {
         font-size: 7vw;
     }
