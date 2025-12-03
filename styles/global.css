@@ -1,25 +1,25 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    --light-grey: #d0d1d3;
-    --saumon: #eacac6;
-    --white: #f9fafc;
-    --black: #313131;
-    --light-pink: #f6f3f3;
-    --brown: #4a3225;
-    font-family: 'Ubuntu', serif;
-    margin-top: 65px;
+  --light-grey: #d0d1d3;
+  --saumon: #eacac6;
+  --white: #f9fafc;
+  --black: #313131;
+  --light-pink: #f6f3f3;
+  --brown: #4a3225;
+  font-family: "Ubuntu", serif;
+  margin-top: 65px;
 }
 
 #loading-bar {
-    text-align: center;
-    font-size: 30px;
+  text-align: center;
+  font-size: 30px;
 }
 
 #content-loaded {
-    visibility: hidden;
+  visibility: hidden;
 }

@@ -3,30 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO amélioré -->
+    <title>
+      Marianne Caloin - Psychologue Périnatalité Villeneuve d'Ascq (59) |
+      Accompagnement Parents
+    </title>
     <meta
       name="description"
-      content="Bienvenue sur le site web de Marianne Caloin, psychologue clinicienne et psychothérapeute à Villeneuve d'Ascq (59)." />
+      content="Psychologue clinicienne spécialisée en périnatalité à Villeneuve d'Ascq près de Lille. Accompagnement futurs parents, consultations grossesse, massages ayurvédiques, méditation pleine conscience."
+    />
+    <meta
+      name="keywords"
+      content="psychologue villeneuve ascq, psychologue lille, périnatalité, grossesse, accompagnement parents, massage ayurvédique, méditation, post-partum"
+    />
+    <meta name="author" content="Marianne Caloin" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Psychologist",
+        "name": "Marianne Caloin",
+        "description": "Psychologue clinicienne et psychothérapeute spécialisée en périnatalité",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4 avenue de la Créativité",
+          "addressLocality": "Villeneuve d'Ascq",
+          "postalCode": "59650",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33676978261",
+        "email": "mcaloin@hotmail.fr",
+        "url": "https://ayurvedapsychologuelille.fr",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "50.6401",
+          "longitude": "3.1472"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Monday",
+            "opens": "09:00",
+            "closes": "19:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Tuesday",
+            "opens": "09:00",
+            "closes": "19:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Wednesday",
+            "opens": "09:00",
+            "closes": "19:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "09:00",
+            "closes": "19:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "09:00",
+            "closes": "19:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "12:30"
+          }
+        ]
+      }
+    </script>
+    <link
+      rel="canonical"
+      href="https://www.ayurvedapsychologuelille.fr/index.html"
+    />
+
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta
+      property="og:title"
+      content="Marianne Caloin - Psychologue Périnatalité Villeneuve d'Ascq"
+    />
+    <meta
+      property="og:description"
+      content="Accompagnement des futurs et jeunes parents. Consultations, massages ayurvédiques, méditation."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.ayurvedapsychologuelille.fr/"
+    />
+    <meta
+      property="og:image"
+      content="https://www.ayurvedapsychologuelille.fr/assets/marianne.jpg"
+    />
+
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Ubuntu|Satisfy&display=swap" />
+      href="https://fonts.googleapis.com/css?family=Ubuntu|Satisfy&display=swap"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/apple-touch-icon.png" />
+      href="assets/apple-touch-icon.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/favicon-32x32.png" />
+      href="assets/favicon-32x32.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/favicon-16x16.png" />
+      href="assets/favicon-16x16.png"
+    />
     <link rel="manifest" href="assets/site.webmanifest" />
     <script
       src="https://kit.fontawesome.com/8bdc4426c0.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/home.css" />
@@ -41,8 +142,8 @@
         <a href="index.html"><span>Marianne Caloin</span></a>
         <nav>
           <ul id="navigation">
-            <li><a href="moi.html">A propos</a></li>
-            <li><a href="psychotherapie.html">Psychothérapie</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="consultations.html">Consultations</a></li>
             <li><a href="naissance.html">Naissance</a></li>
             <li><a href="meditation.html">Méditation</a></li>
             <li><a href="supervision.html">Supervision</a></li>
@@ -51,8 +152,8 @@
           <div class="mobile-menu">
             <button id="burger-btn"><i class="fa-solid fa-bars"></i></button>
             <ul id="mobile-nav">
-              <li><a href="moi.html">A propos</a></li>
-              <li><a href="psychotherapie.html">Psychothérapie</a></li>
+              <li><a href="about.html">A propos</a></li>
+              <li><a href="consultations.html">Consultations</a></li>
               <li><a href="naissance.html">Naissance</a></li>
               <li><a href="meditation.html">Méditation</a></li>
               <li><a href="supervision.html">Supervision</a></li>
@@ -68,19 +169,24 @@
           <p>
             Formée à diverses méthodes, je privilégie dans ma pratique le lien
             corps/esprit et la bienveillance comme force d’évolution et de
-            guérison. J’exerce en métropole lilloise.
+            guérison.
+            <span class="h3"
+              >J’accompagne les futurs et les jeunes parents quelles que soient
+              leurs difficultés.</span
+            >
+            J’exerce en métropole lilloise.
           </p>
-          <a href="moi.html">En savoir plus...</a>
+          <a href="about.html">En savoir plus...</a>
         </div>
       </section>
-      <section id="psychotherapy" class="section-img-right">
+      <section id="consultations" class="section-img-right">
         <div class="section-text">
-          <h2>Moment difficile ? Envie que ça change dans votre vie ?</h2>
+          <h2>Difficultés liées à l’attente ou à l’arrivée de bébé?</h2>
           <p>
-            Je vous reçois en psychothérapie, seul.e ou en couple.
+            Je vous reçois en consultation, seul.e ou en couple.
             L’accompagnement est adapté à votre demande et à vos besoins
           </p>
-          <a href="psychotherapie.html">En savoir plus...</a>
+          <a href="consultations.html">En savoir plus...</a>
         </div>
         <div class="section-img"></div>
       </section>

@@ -1,15 +1,15 @@
-#meditation-content>.content-text {
-    background-color: var(--light-pink);
-    color: #193876;
+#meditation-content > .content-text {
+  background-color: var(--light-pink);
+  color: #193876;
 }
 
-#meditation-content>.content-img {
-    background-image: url(../assets/meditation-content.jpg);
+#meditation-content > .content-img {
+  background-image: url(../assets/meditation-content.jpg);
 }
 
 /*tablet*/
 @media (max-width: 768px) {
-    #meditation-content>.content-img {
-        background-position: 100% 53%;
-    }
+  #meditation-content > .content-img {
+    background-position: 100% 53%;
+  }
 }

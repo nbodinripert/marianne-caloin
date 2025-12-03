@@ -1,0 +1,15 @@
+#consulations-content > .content-text {
+  background-color: #fbebe5;
+  color: var(--brown);
+}
+
+#consulations-content > .content-img {
+  background-image: url(../assets/consultations-content.jpg);
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+  #consulations-content > .content-img {
+    background-position: 100% 88%;
+  }
+}
