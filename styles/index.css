@@ -45,28 +45,24 @@ section {
 }
 
 /*à propos*/
-#about > .section-img {
+#a-propos > .section-img {
   background-image: url(../assets/marianne.jpg);
   width: 30%;
   min-width: 350px;
 }
 
-#about > .section-text {
+#a-propos > .section-text {
   background-color: var(--light-pink);
   color: rgb(27, 59, 123);
   width: 70%;
 }
 
-#about > .section-text > a {
+#a-propos > .section-text > a {
   color: rgb(35, 57, 109);
 }
 
-#about > .section-text > a:hover {
+#a-propos > .section-text > a:hover {
   color: rgb(25, 28, 31);
-}
-
-#about > .section-text > p > .h3 {
-  font-size: max(2.3vw, 28px);
 }
 
 /*consultations*/
@@ -96,29 +92,29 @@ section {
 }
 
 /*naissance*/
-#birth {
+#naissance {
   position: relative;
 }
 
-#birth > .section-img {
+#naissance > .section-img {
   width: 100%;
   background-image: url(../assets/naissance.jpg);
   background-attachment: fixed;
   opacity: 0.3;
 }
 
-#birth > .section-text {
+#naissance > .section-text {
   position: absolute;
   text-align: center;
   color: #3f254a;
 }
 
-#birth > .section-text > a {
+#naissance > .section-text > a {
   color: rgb(91, 66, 100);
   width: auto;
 }
 
-#birth > .section-text > a:hover {
+#naissance > .section-text > a:hover {
   color: rgb(33, 23, 39);
 }
 
@@ -263,17 +259,17 @@ section {
     font-size: 9vw;
   }
 
-  #birth {
+  #naissance {
     position: inherit;
     flex-direction: column;
   }
 
-  #birth > .section-img {
+  #naissance > .section-img {
     background-attachment: scroll;
     opacity: 1;
   }
 
-  #birth > .section-text {
+  #naissance > .section-text {
     position: inherit;
   }
 

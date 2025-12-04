@@ -14,12 +14,3 @@ body {
   font-family: "Ubuntu", serif;
   margin-top: 65px;
 }
-
-#loading-bar {
-  text-align: center;
-  font-size: 30px;
-}
-
-#content-loaded {
-  visibility: hidden;
-}

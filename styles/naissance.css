@@ -1,4 +1,4 @@
-#birth-content {
+#naissance-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,65 +8,53 @@
   color: #3f254a;
   min-height: calc(100vh - 65px);
   overflow-x: hidden;
+  gap: 20px;
 }
 
-#birth-content > div {
+#naissance-content > div {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 20px;
 }
 
-#birth-content img {
+#naissance-content img {
   height: 100%;
   width: 100%;
   border-radius: 10px;
 }
 
-#birth-content p {
-  line-height: 1.5;
-  font-size: max(1.4vw, 17px);
-}
-
 .img-wrapper {
-  width: 35%;
-  min-width: 380px;
-  height: 300px;
+  min-width: 300px;
+  max-width: 400px;
   border-radius: 5px;
 }
 
 .img-wrapper-2 {
-  width: 20%;
-  min-width: 270px;
+  min-width: 220px;
+  max-width: 270px;
   border-radius: 5px;
-}
-
-.txt-wrapper {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
 /*tablet*/
 @media (max-width: 768px) {
   .img-wrapper,
-  .img-wrapper-2,
-  .txt-wrapper {
+  .img-wrapper-2 {
     width: 100%;
     min-width: none;
+    max-width: none;
   }
 
-  #birth-content > div {
+  #naissance-content > div {
     justify-content: center;
     align-items: flex-start;
   }
 
-  #birth-content > div:nth-child(1) {
+  #naissance-content > div:nth-child(1) {
     flex-direction: column;
   }
 
-  #birth-content > div:nth-child(2) {
+  #naissance-content > div:nth-child(2) {
     flex-direction: column-reverse;
   }
 

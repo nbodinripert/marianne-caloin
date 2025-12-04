@@ -7,28 +7,38 @@
 
 .content-text {
   width: 65%;
-  padding: 2.2vw;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
 }
 
-.content-text p {
+p {
   line-height: 1.5;
-  font-size: max(1.4vw, 17px);
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
-.h1 {
-  font-size: max(3.1vw, 32px);
+h1 {
+  font-size: 35px;
+  margin-bottom: 25px;
 }
 
-.h2 {
-  font-size: max(2.2vw, 23px);
+h2 {
+  font-size: 30px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
-.h3 {
-  font-size: max(1.8vw, 19px);
+h3 {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  font-size: 23px;
+  font-weight: bold;
 }
 
 .content-img {
@@ -71,15 +81,15 @@
     padding: 15px !important;
   }
 
-  .h1 {
+  h1 {
     font-size: max(3.5vw, 34px);
   }
 
-  .h2 {
+  h2 {
     font-size: max(3vw, 27px);
   }
 
-  .h3 {
+  h3 {
     font-size: max(2.5vw, 23px);
   }
 }

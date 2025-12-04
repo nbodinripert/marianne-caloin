@@ -1,30 +1,36 @@
-const loadingBar = document.getElementById("loading-bar");
-const contentLoaded = document.getElementById("content-loaded");
 const burgerBtn = document.getElementById("burger-btn");
 const mobileNav = document.getElementById("mobile-nav");
 
-// Toutes les images ont été chargées
 window.addEventListener("load", () => {
-  // Cacher la barre de progression
-  loadingBar.style.display = "none";
-
-  // Afficher le contenu du site
-  contentLoaded.style.visibility = "visible";
+  // Ajouter la classe active au lien de navigation correspondant
+  highlightCurrentPage();
 });
 
+function highlightCurrentPage() {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const navLinks = document.querySelectorAll("#navigation a, #mobile-nav a");
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (href === currentPage) {
+      link.classList.add("active-page");
+    } else {
+      link.classList.remove("active-page");
+    }
+  });
+}
+
 burgerBtn.addEventListener("click", (event) => {
-  event.stopPropagation(); // Empêche la propagation de l'événement de fermeture au document
+  event.stopPropagation();
   mobileNav.classList.toggle("active");
 });
 
-// Ajoute un écouteur de clic au document pour fermer le menu en cliquant ailleurs
 document.addEventListener("click", (event) => {
   if (!mobileNav.contains(event.target) && !burgerBtn.contains(event.target)) {
     mobileNav.classList.remove("active");
   }
 });
 
-// Ajoute un écouteur de redimensionnement d'écran pour fermer le menu
 window.addEventListener("resize", () => {
   mobileNav.classList.remove("active");
 });

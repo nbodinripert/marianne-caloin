@@ -56,6 +56,14 @@ a {
   transform: scaleX(1);
 }
 
+#navigation li a.active-page {
+  font-weight: 600;
+}
+
+#navigation li a.active-page::before {
+  transform: scaleX(1);
+}
+
 header > a > span:hover,
 #navigation li a:hover {
   color: rgb(21, 22, 22);
@@ -94,7 +102,12 @@ header > a > span:hover,
 }
 
 #mobile-nav.active li a {
-  color: var(--white);
+  color: rgb(213, 213, 213);
+}
+
+#mobile-nav.active li a.active-page {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
 }
 
 /*tablet*/
